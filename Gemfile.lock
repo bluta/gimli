@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/bluta/paperclip-globalize3.git
-  revision: 892fbea2527db4265de032ae76a048dbfab753c1
+  revision: 78810a424df1f2221a0433700ae2c43b1b5bc9cc
   specs:
     paperclip-globalize3 (1.0.0)
       globalize (~> 3.0)
@@ -44,6 +44,14 @@ GIT
   revision: 26bd2b8f7a0239b696492eb2ae5e824fe23945fb
   specs:
     dynamic_form (1.1.3)
+
+GIT
+  remote: git://github.com/leftis/globalize3_helpers.git
+  revision: c13378389a2ae4f60131f6637bfde539f8f665d9
+  specs:
+    globalize3_helpers (0.3.1)
+      activesupport
+      globalize (>= 3.0.0)
 
 GIT
   remote: git://github.com/leikind/wice_grid.git
@@ -250,13 +258,9 @@ GEM
     globalize (3.1.0)
       activemodel (>= 3.1.0, < 4.0.0)
       activerecord (>= 3.1.0, < 4.0.0)
-    globalize3 (0.3.0)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      paper_trail (~> 2)
-    globalize3_helpers (0.3.0)
-      activesupport
-      globalize3
+    globalize-versioning (0.1.0.alpha.1)
+      globalize (>= 3, < 5)
+      paper_trail (~> 3.0.0)
     gyoku (1.0.0)
       builder (>= 2.1.2)
     haml (4.0.5)
@@ -333,9 +337,9 @@ GEM
     nori (2.0.3)
     ntlm-http (0.1.1)
     orm_adapter (0.4.0)
-    paper_trail (2.7.0)
-      activerecord (~> 3.0)
-      railties (~> 3.0)
+    paper_trail (3.0.0)
+      activerecord (>= 3.0, < 5.0)
+      activesupport (>= 3.0, < 5.0)
     paperclip (3.3.1)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -579,7 +583,8 @@ DEPENDENCIES
   feedzirra
   formtastic
   globalize (~> 3.1.0)
-  globalize3_helpers
+  globalize-versioning
+  globalize3_helpers!
   heroku!
   heroku-rails-saas!
   hirb-unicode
