@@ -95,7 +95,7 @@ GIT
 
 GIT
   remote: https://github.com/bluta/active_shipping.git
-  revision: 0e7966415e7d6a441561d5fc13757d722a8ce9ca
+  revision: 2a0eea8bf28d820ed4d5742a7245a95328544265
   specs:
     active_shipping (0.9.7)
       activesupport (>= 2.3.5)
@@ -103,9 +103,9 @@ GIT
 
 GIT
   remote: https://github.com/bluta/tc_shippers.git
-  revision: 72f056fefcca0d7e1cd2e0d42bacc6d4a7f19aed
+  revision: dd742d68a4ba6907e72ef56157ebcf370d0ca8c1
   specs:
-    tc_shippers (0.0.4)
+    tc_shippers (0.0.7)
       barby (= 0.4.2)
       builder
       i18n
@@ -168,7 +168,7 @@ GEM
     acts_as_list (0.4.0)
       activerecord (>= 3.0)
     addressable (2.3.6)
-    akami (1.2.1)
+    akami (1.2.2)
       gyoku (>= 0.4.0)
       nokogiri
     arel (3.0.3)
@@ -210,7 +210,6 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     colorize (0.7.2)
-    columnize (0.3.6)
     compass (0.12.5)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -233,12 +232,6 @@ GEM
     daemons (1.1.9)
     dalli (2.7.0)
     database_cleaner (1.2.0)
-    debugger (1.6.6)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.2)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.2)
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -249,9 +242,9 @@ GEM
       devise (>= 2.1.0)
     diff-lcs (1.2.5)
     differ (0.1.2)
-    domain_name (0.5.16)
+    domain_name (0.5.18)
       unf (>= 0.0.5, < 1.0.0)
-    doorkeeper (1.0.0)
+    doorkeeper (1.1.0)
       railties (>= 3.1)
     draper (1.3.0)
       actionpack (>= 3.0)
@@ -259,7 +252,23 @@ GEM
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
     dynamic_form (1.1.4)
+    engineyard (2.3.3)
+      engineyard-cloud-client (~> 1.0.16)
+      engineyard-serverside-adapter (= 2.2.0)
+      escape (~> 0.0.4)
+      highline (~> 1.6.1)
+      launchy (~> 2.1)
+      net-ssh (~> 2.7)
+      rest-client (~> 1.6.0)
+    engineyard-cloud-client (1.0.16)
+      mime-types (~> 1.16)
+      multi_json (~> 1.6)
+      rest-client (~> 1.6.1)
+    engineyard-serverside-adapter (2.2.0)
+      escape (~> 0.0.4)
+      multi_json (~> 1.6)
     erubis (2.7.0)
+    escape (0.0.4)
     eventmachine (1.0.3)
     excon (0.32.0)
     execjs (2.0.2)
@@ -293,6 +302,7 @@ GEM
     heroku-api (0.3.17)
       excon (~> 0.27)
       multi_json (~> 1.8.2)
+    highline (1.6.21)
     hike (1.2.3)
     hirb (0.7.1)
     hirb-unicode (0.0.5)
@@ -330,6 +340,8 @@ GEM
     launchy (2.4.2)
       addressable (~> 2.3)
     liquid (2.6.1)
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -344,7 +356,7 @@ GEM
       webrobots (>= 0.0.9, < 0.2)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile (0.5.3)
+    mini_portile (0.6.0)
     mono_logger (1.1.0)
     multi_json (1.8.4)
     multi_xml (0.5.5)
@@ -353,14 +365,15 @@ GEM
     nested_form (0.3.2)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
+    net-ssh (2.9.1)
     netrc (0.7.7)
     newrelic-redis (1.4.0)
       newrelic_rpm (~> 3.0)
       redis (< 4.0)
     newrelic_rpm (3.7.3.204)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
-    nori (2.3.0)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
+    nori (2.4.0)
     ntlm-http (0.1.1)
     orm_adapter (0.5.0)
     paper_trail (3.0.1)
@@ -391,8 +404,7 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry-debugger (0.2.2)
-      debugger (~> 1.3)
+    pry-nav (0.2.3)
       pry (~> 0.9.10)
     public_suffix (1.4.2)
     quiet_assets (1.0.2)
@@ -483,7 +495,7 @@ GEM
     rqrcode (0.4.2)
     rspec-core (2.14.8)
     rspec-mocks (2.14.6)
-    rspec-rails (2.14.1)
+    rspec-rails (2.14.2)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
       activesupport (>= 3.0)
@@ -503,14 +515,15 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    savon (2.3.3)
+    savon (2.5.1)
       akami (~> 1.2.0)
       builder (>= 2.1.2)
       gyoku (~> 1.1.0)
       httpi (~> 2.1.0)
       nokogiri (>= 1.4.0)
-      nori (~> 2.3.0)
-      wasabi (~> 3.2.2)
+      nori (~> 2.4.0)
+      uuid (~> 2.3.7)
+      wasabi (~> 3.3.0)
     schema_plus (1.5.0)
       activerecord (>= 3.2)
       valuable
@@ -530,10 +543,6 @@ GEM
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     slop (3.4.7)
-    spork (1.0.0rc4)
-    spork-rails (4.0.0)
-      rails (>= 3.0.0, < 5)
-      spork (>= 1.0rc0)
     spreadsheet (0.9.7)
       ruby-ole (>= 1.0)
     sprockets (2.2.2)
@@ -541,6 +550,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    systemu (2.6.4)
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -561,18 +571,19 @@ GEM
     tzinfo (0.3.39)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
-      json (>= 1.8.0)
-    unf (0.1.3)
+    unf (0.1.4)
       unf_ext
     unf_ext (0.0.6)
     unicode-display_width (0.1.1)
+    uuid (2.3.7)
+      macaddr (~> 1.0)
     uuidtools (2.1.4)
     valuable (0.9.8)
     vegas (0.1.11)
       rack (>= 1.0.0)
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (3.2.3)
+    wasabi (3.3.0)
       httpi (~> 2.0)
       mime-types (< 2.0.0)
       nokogiri (>= 1.4.0)
@@ -616,9 +627,10 @@ DEPENDENCIES
   devise-encryptable
   devportal!
   differ
-  doorkeeper (~> 1.0.0)
+  doorkeeper (~> 1.0)
   draper
   dynamic_form
+  engineyard
   factory_girl_rails
   feedzirra
   formtastic
@@ -645,7 +657,7 @@ DEPENDENCIES
   paperclip-globalize3!
   poltergeist
   pry
-  pry-debugger
+  pry-nav
   public_suffix
   quiet_assets
   rack-cors
@@ -673,7 +685,6 @@ DEPENDENCIES
   selenium-webdriver
   sendgrid
   simple_form
-  spork-rails
   tc_shippers!
   thin
   thor
