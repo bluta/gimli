@@ -1,8 +1,10 @@
 desc "sync gemfile, "
+
+task default: :get
 task :get do
   filepath = 'Gemfile.lock'
 
-  sh "cp ../*-v2/#{filepath} ./"
+  sh "cp ../*-v2/#{filepath} ../*-v2/.ruby-version ./"
 
   IO.write(filepath, File.open(filepath) do |f|
       f.read
@@ -10,7 +12,7 @@ task :get do
         .gsub(/(?<=github.com\/)([a-zA-Z]{12})(?=\/)/, 'bluta')  # gh repo names
     end
   )
-  sh 'git add Gemfile.lock'
+  sh 'git add Gemfile.lock .ruby-version'
   sh 'git diff master'
 end
 
