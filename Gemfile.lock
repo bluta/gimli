@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/CanCanCommunity/cancancan.git
-  revision: 8a85c0d5d4ec0472cc1aebda2da1bc430f9e11d0
-  specs:
-    cancancan (2.0.0)
-
-GIT
   remote: https://github.com/TerraCycle/cookie_law.git
   revision: c8425bd86217c2bb51fc6772faa1fa9ae49276c5
   branch: expires-cookie-fix
@@ -12,7 +6,7 @@ GIT
     cookie_law (0.1.2)
 
 GIT
-  remote: https://github.com/TerraCycle/editorium-ruby
+  remote: https://github.com/TerraCycle/editorium-ruby.git
   revision: a51143a1b02fabe524c57f3e56e6765fa8b973d7
   specs:
     editorium (0.0.7)
@@ -21,13 +15,13 @@ GIT
 
 GIT
   remote: https://github.com/TerraCycle/globalize-versioning.git
-  revision: d16019fb64123bce43e5a9a60934a363c035af82
+  revision: 390bc0a9a4ec8d82637739ad4cd06911b92cf368
   specs:
     globalize-versioning (0.2.0)
-      activemodel (>= 3.2.0, < 5)
-      activerecord (>= 3.2.0, < 5)
+      activemodel (>= 3.2.0, < 6)
+      activerecord (>= 3.2.0, < 6)
       globalize (>= 3.0.4, < 6)
-      paper_trail (>= 7.0.0, < 8)
+      paper_trail (>= 3.0.0, < 8)
 
 GIT
   remote: https://github.com/ably-forks/compass.git
@@ -46,25 +40,6 @@ GIT
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-
-GIT
-  remote: https://github.com/gregbell/active_admin.git
-  revision: f8926831429fe635d26ac8043ea5d676fb6ee637
-  specs:
-    activeadmin (1.0.0.pre4)
-      arbre (~> 1.0, >= 1.0.2)
-      bourbon
-      coffee-rails
-      formtastic (~> 3.1)
-      formtastic_i18n
-      inherited_resources (~> 1.6)
-      jquery-rails
-      jquery-ui-rails
-      kaminari (~> 0.15)
-      railties (>= 3.2, < 5.1)
-      ransack (~> 1.3)
-      sass-rails
-      sprockets (< 4.1)
 
 GIT
   remote: https://github.com/leftis/globalize3_helpers.git
@@ -93,60 +68,76 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (1.0.2)
-    aasm (4.12.1)
+    aasm (4.12.3)
       concurrent-ruby (~> 1.0)
-    actionmailer (4.2.9)
-      actionpack (= 4.2.9)
-      actionview (= 4.2.9)
-      activejob (= 4.2.9)
+    actionmailer (4.2.10)
+      actionpack (= 4.2.10)
+      actionview (= 4.2.10)
+      activejob (= 4.2.10)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (4.2.9)
-      actionview (= 4.2.9)
-      activesupport (= 4.2.9)
+    actionpack (4.2.10)
+      actionview (= 4.2.10)
+      activesupport (= 4.2.10)
       rack (~> 1.6)
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.9)
-      activesupport (= 4.2.9)
+    actionview (4.2.10)
+      activesupport (= 4.2.10)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    active_link_to (1.0.3)
+    active_link_to (1.0.5)
       actionpack
-    active_model_serializers (0.8.3)
-      activemodel (>= 3.0)
-    active_shipping (2.1.0)
+      addressable
+    active_model_serializers (0.10.7)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
+    active_shipping (2.1.1)
       active_utils (~> 3.3.1)
       activesupport (>= 4.2, < 5.2.0)
       measured (>= 2.0)
       nokogiri (>= 1.6)
-    active_utils (3.3.7)
+    active_utils (3.3.9)
       activesupport (>= 3.2, < 5.2.0)
       i18n
+    activeadmin (1.1.0)
+      arbre (>= 1.1.1)
+      coffee-rails
+      formtastic (~> 3.1)
+      formtastic_i18n
+      inherited_resources (~> 1.7)
+      jquery-rails
+      kaminari (>= 0.15, < 2.0)
+      railties (>= 4.2, < 5.2)
+      ransack (~> 1.3)
+      sass (~> 3.1)
+      sprockets (< 4.1)
     activeadmin-sortable (0.0.3)
       activeadmin (>= 0.4)
-    activejob (4.2.9)
-      activesupport (= 4.2.9)
+    activejob (4.2.10)
+      activesupport (= 4.2.10)
       globalid (>= 0.3.0)
-    activemodel (4.2.9)
-      activesupport (= 4.2.9)
+    activemodel (4.2.10)
+      activesupport (= 4.2.10)
       builder (~> 3.1)
-    activerecord (4.2.9)
-      activemodel (= 4.2.9)
-      activesupport (= 4.2.9)
+    activerecord (4.2.10)
+      activemodel (= 4.2.10)
+      activesupport (= 4.2.10)
       arel (~> 6.0)
-    activesupport (4.2.9)
+    activesupport (4.2.10)
       i18n (~> 0.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts_as_list (0.9.7)
+    acts_as_list (0.9.10)
       activerecord (>= 3.0)
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     afm (0.2.2)
     akami (1.3.1)
       gyoku (>= 0.4.0)
@@ -157,24 +148,23 @@ GEM
     arrayfields (4.9.2)
     ast (2.3.0)
     awesome_print (1.8.0)
-    aws-sdk (2.10.16)
-      aws-sdk-resources (= 2.10.16)
-    aws-sdk-core (2.10.16)
+    aws-sdk (2.10.21)
+      aws-sdk-resources (= 2.10.21)
+    aws-sdk-core (2.10.21)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.10.16)
-      aws-sdk-core (= 2.10.16)
+    aws-sdk-resources (2.10.21)
+      aws-sdk-core (= 2.10.21)
     aws-sigv4 (1.0.1)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
+    backports (3.10.3)
     barby (0.6.5)
     bcrypt (3.1.11)
-    bourbon (4.2.7)
-      sass (~> 3.4)
-      thor (~> 0.19)
     builder (3.2.3)
+    cancancan (2.1.2)
     capybara (2.13.0)
       addressable
       mime-types (>= 1.16)
@@ -188,16 +178,18 @@ GEM
     capybara-webkit (1.14.0)
       capybara (>= 2.3.0, < 2.14.0)
       json
+    case_transform (0.2)
+      activesupport
     choice (0.2.0)
     chronic (0.10.2)
-    chunky_png (1.3.7)
-    climate_control (0.1.0)
+    chunky_png (1.3.8)
+    climate_control (0.2.0)
     cliver (0.3.2)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
-    coderay (1.1.1)
+    codeclimate-test-reporter (1.0.8)
+      simplecov (<= 0.13)
+    coderay (1.1.2)
     coerce (0.0.8)
       chronic (>= 0.6.2)
     coffee-rails (4.2.2)
@@ -216,25 +208,31 @@ GEM
       compass
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
-    cucumber (2.4.0)
+    crass (1.0.3)
+    cucumber (3.0.2)
       builder (>= 2.1.2)
-      cucumber-core (~> 1.5.0)
+      cucumber-core (~> 3.0.0)
+      cucumber-expressions (~> 4.0.3)
       cucumber-wire (~> 0.0.1)
-      diff-lcs (>= 1.1.3)
+      diff-lcs (~> 1.3)
       gherkin (~> 4.0)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.2)
-    cucumber-core (1.5.0)
-      gherkin (~> 4.0)
+    cucumber-core (3.0.0)
+      backports (>= 3.8.0)
+      cucumber-tag_expressions (>= 1.0.1)
+      gherkin (>= 4.1.3)
+    cucumber-expressions (4.0.4)
     cucumber-rails (1.5.0)
       capybara (>= 1.1.2, < 3)
       cucumber (>= 1.3.8, < 4)
       mime-types (>= 1.17, < 4)
       nokogiri (~> 1.5)
       railties (>= 4, < 5.2)
+    cucumber-tag_expressions (1.0.1)
     cucumber-wire (0.0.1)
     dalli (2.7.6)
-    database_cleaner (1.6.1)
+    database_cleaner (1.6.2)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -246,14 +244,14 @@ GEM
     dnsimple-ruby (1.7.1)
       httparty (~> 0.12)
     docile (1.1.5)
-    domain_name (0.5.20160826)
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     doorkeeper (4.2.6)
       railties (>= 4.2)
     dotenv (2.2.1)
     dotenv-rails (2.2.1)
       dotenv (= 2.2.1)
-      railties (>= 3.2, < 5.2)
+      railties (>= 4.0, < 5.1)
     draper (2.1.0)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
@@ -261,17 +259,19 @@ GEM
       request_store (~> 1.0)
     dynamic_form (1.1.4)
     erubis (2.7.0)
+    et-orbi (1.0.8)
+      tzinfo
     execjs (2.7.0)
-    factory_girl (4.8.0)
+    factory_girl (4.9.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.8.0)
-      factory_girl (~> 4.8.0)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
-    faraday (0.11.0)
+    faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.11.0.1)
+    faraday_middleware (0.12.2)
       faraday (>= 0.7.4, < 1.0)
-    fast_excel (0.2.1)
+    fast_excel (0.2.3)
       ffi (> 1.9, < 2)
     fattr (2.3.0)
     feedjira (2.1.2)
@@ -279,7 +279,7 @@ GEM
       faraday_middleware (>= 0.9)
       loofah (>= 2.0)
       sax-machine (>= 1.0)
-    ffi (1.9.14)
+    ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
     formtastic (3.1.5)
@@ -287,7 +287,7 @@ GEM
     formtastic_i18n (0.6.0)
     get_process_mem (0.2.1)
     gherkin (4.1.3)
-    globalid (0.4.0)
+    globalid (0.4.1)
       activesupport (>= 4.2.0)
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
@@ -295,17 +295,17 @@ GEM
     gritter (1.2.0)
     gyoku (1.3.1)
       builder (>= 2.1.2)
-    haml (5.0.1)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    has_scope (0.6.0)
-      actionpack (>= 3.2, < 5)
-      activesupport (>= 3.2, < 5)
+    has_scope (0.7.1)
+      actionpack (>= 4.1, < 5.2)
+      activesupport (>= 4.1, < 5.2)
     hashery (2.1.2)
-    hashie (3.5.5)
-    highline (1.7.8)
+    hashie (3.5.6)
+    highline (1.7.10)
     htmlentities (4.3.4)
-    http-cookie (1.0.2)
+    http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_accept_language (2.1.1)
     httparty (0.15.6)
@@ -314,14 +314,15 @@ GEM
     httpi (2.4.2)
       rack
       socksify
-    i18n (0.8.6)
-    i18n-active_record (0.2.0)
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    i18n-active_record (0.2.1)
       i18n (>= 0.5.0)
     inflection (1.0.0)
-    inherited_resources (1.6.0)
-      actionpack (>= 3.2, < 5)
-      has_scope (~> 0.6.0.rc)
-      railties (>= 3.2, < 5)
+    inherited_resources (1.7.2)
+      actionpack (>= 3.2, < 5.2.x)
+      has_scope (~> 0.6)
+      railties (>= 3.2, < 5.2.x)
       responders
     its-it (1.3.0)
     jmespath (1.3.1)
@@ -332,22 +333,33 @@ GEM
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
     json (2.1.0)
-    kaminari (0.17.0)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
+    jsonapi-renderer (0.2.0)
+    kaminari (1.1.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
+      actionview
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
+      activerecord
+      kaminari-core (= 1.1.1)
+    kaminari-core (1.1.1)
     key_struct (0.4.2)
     liquid (3.0.6)
-    loofah (2.0.3)
+    loofah (2.1.1)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.6.6)
-      mime-types (>= 1.16, < 4)
+    mail (2.7.0)
+      mini_mime (>= 0.1.1)
     main (6.2.2)
       arrayfields (~> 4.7, >= 4.7.4)
       chronic (~> 0.6, >= 0.6.2)
       fattr (~> 2.2, >= 2.2.0)
       map (~> 6.1, >= 6.1.0)
     map (6.6.0)
-    measured (2.0.0)
+    measured (2.2.0)
       activesupport (>= 4.2)
     mechanize (2.7.5)
       domain_name (~> 0.5, >= 0.5.1)
@@ -361,24 +373,27 @@ GEM
     meta-tags-helpers (0.2.0)
       rails (> 3)
     method_source (0.8.2)
-    mime-types (2.99.3)
-    mimemagic (0.3.0)
-    mini_portile2 (2.2.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    mimemagic (0.3.2)
+    mini_mime (1.0.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
     modware (0.1.3)
       key_struct (~> 0.4)
     mono_logger (1.1.0)
-    multi_json (1.12.1)
+    multi_json (1.12.2)
     multi_test (0.1.2)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     nested_form (0.3.2)
     net-http-digest_auth (1.4.1)
     net-http-persistent (2.9.4)
-    netrc (0.10.3)
-    newrelic_rpm (4.3.0.335)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    netrc (0.11.0)
+    newrelic_rpm (4.6.0.338)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     nori (2.6.0)
     ntlm-http (0.1.1)
     orm_adapter (0.5.0)
@@ -391,9 +406,9 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    parallel (1.11.2)
-    parser (2.4.0.0)
-      ast (~> 2.2)
+    parallel (1.12.0)
+    parser (2.4.0.2)
+      ast (~> 2.3)
     pdf-core (0.7.0)
     pdf-reader (2.0.0)
       Ascii85 (~> 1.0.0)
@@ -402,7 +417,7 @@ GEM
       ruby-rc4
       ttfunk
     pg (0.21.0)
-    poltergeist (1.15.0)
+    poltergeist (1.16.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
@@ -421,17 +436,15 @@ GEM
       slop (~> 3.4)
     pry-nav (0.2.4)
       pry (>= 0.9.10, < 0.11.0)
-    public_suffix (2.0.5)
-    puma (3.9.1)
+    public_suffix (3.0.1)
+    puma (3.11.0)
     puma_worker_killer (0.1.0)
       get_process_mem (~> 0.2)
       puma (>= 2.7, < 4)
-    quiet_assets (1.1.0)
-      railties (>= 3.1, < 5.0)
     rack (1.6.8)
     rack-cache (1.7.0)
       rack (>= 0.4)
-    rack-cors (0.4.1)
+    rack-cors (1.0.1)
     rack-iframe (0.0.3)
       rack
     rack-pjax (1.0.0)
@@ -441,16 +454,16 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.2.9)
-      actionmailer (= 4.2.9)
-      actionpack (= 4.2.9)
-      actionview (= 4.2.9)
-      activejob (= 4.2.9)
-      activemodel (= 4.2.9)
-      activerecord (= 4.2.9)
-      activesupport (= 4.2.9)
+    rails (4.2.10)
+      actionmailer (= 4.2.10)
+      actionpack (= 4.2.10)
+      actionview (= 4.2.10)
+      activejob (= 4.2.10)
+      activemodel (= 4.2.10)
+      activerecord (= 4.2.10)
+      activesupport (= 4.2.10)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.2.9)
+      railties (= 4.2.10)
       sprockets-rails
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -485,31 +498,30 @@ GEM
       sass-rails (>= 4.0, < 6)
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
-    railties (4.2.9)
-      actionpack (= 4.2.9)
-      activesupport (= 4.2.9)
+    railties (4.2.10)
+      actionpack (= 4.2.10)
+      activesupport (= 4.2.10)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
-    rake (12.0.0)
-    ransack (1.8.3)
+    rake (12.3.0)
+    ransack (1.8.4)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.3)
-    rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
-    react-rails (1.10.0)
+    rb-fsevent (0.10.2)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    react-rails (2.2.1)
       babel-transpiler (>= 0.7.0)
-      coffee-script-source (~> 1.8)
       connection_pool
       execjs
       railties (>= 3.2)
       tilt
-    recaptcha (4.3.1)
+    recaptcha (4.6.2)
       json
     recursive-open-struct (1.0.5)
     redcarpet (3.4.0)
@@ -528,21 +540,22 @@ GEM
       redis-namespace (~> 1.3)
       sinatra (>= 0.9.2)
       vegas (~> 0.1.2)
-    resque-cleaner (0.3.2)
+    resque-cleaner (0.4.0)
       resque (~> 1.0)
-    resque-scheduler (4.3.0)
+    resque-scheduler (4.3.1)
       mono_logger (~> 1.0)
-      redis (~> 3.3)
+      redis (>= 3.3, < 5)
       resque (~> 1.26)
       rufus-scheduler (~> 3.2)
-    resque_mailer (2.4.2)
+    resque_mailer (2.4.3)
       actionmailer (>= 3.0)
+      activesupport (>= 3.0)
     resque_solo (0.3.0)
       resque (~> 1.25)
-    rest-client (1.8.0)
+    rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rmagick (2.16.0)
     routing-filter (0.6.1)
       actionpack (>= 4.2, < 5.2)
@@ -575,19 +588,20 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-graphviz (1.2.3)
     ruby-prof (0.16.2)
-    ruby-progressbar (1.8.1)
+    ruby-progressbar (1.9.0)
     ruby-rc4 (0.1.5)
-    rufus-scheduler (3.2.2)
+    rufus-scheduler (3.4.2)
+      et-orbi (~> 1.0)
     sass (3.4.25)
     sass-globbing (1.1.5)
       sass (>= 3.1)
-    sass-rails (5.0.6)
+    sass-rails (5.0.7)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    savon (2.11.1)
+    savon (2.11.2)
       akami (~> 1.2)
       builder (>= 2.1.2)
       gyoku (~> 1.2)
@@ -617,13 +631,13 @@ GEM
       schema_plus_pg_indexes (~> 0.1, >= 0.1.3)
       schema_plus_tables (~> 0.1)
       schema_plus_views (~> 0.1)
-    schema_plus_columns (0.1.3)
-      activerecord (>= 4.2, < 5.1)
+    schema_plus_columns (0.2.0)
+      activerecord (>= 4.2, < 5.2)
       its-it (~> 1.2)
       schema_plus_core
       schema_plus_indexes (~> 0.2)
-    schema_plus_compatibility (0.2.0)
-      activerecord (>= 4.2, < 5.1)
+    schema_plus_compatibility (0.3.0)
+      activerecord (>= 4.2, < 5.2)
       schema_monkey (~> 2.1)
     schema_plus_core (1.0.2)
       activerecord (~> 4.2)
@@ -632,22 +646,22 @@ GEM
     schema_plus_db_default (0.1.1)
       activerecord (~> 4.2)
       schema_plus_core (~> 1.0)
-    schema_plus_default_expr (0.1.3)
-      activerecord (~> 4.2)
+    schema_plus_default_expr (0.1.4)
+      activerecord (>= 4.2, < 6.0)
       its-it (~> 1.2)
-      schema_plus_core (~> 1.0)
-    schema_plus_enums (0.1.4)
-      activerecord (~> 4.2)
+      schema_plus_core (>= 1.0, < 3.0)
+    schema_plus_enums (0.1.5)
+      activerecord (>= 4.2, < 5.1)
       its-it (~> 1.2)
-      schema_plus_core (~> 1.0)
+      schema_plus_core
     schema_plus_foreign_keys (0.1.7)
       activerecord (>= 4.2, < 5.1)
       its-it (~> 1.2)
       schema_plus_compatibility (~> 0.2)
       schema_plus_core
       valuable
-    schema_plus_indexes (0.2.4)
-      activerecord (>= 4.2, < 5.1)
+    schema_plus_indexes (0.3.0)
+      activerecord (>= 4.2, < 5.2)
       its-it (~> 1.2)
       schema_plus_core
     schema_plus_pg_indexes (0.1.12)
@@ -676,29 +690,29 @@ GEM
     simple_form (3.5.0)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
-    simplecov (0.14.1)
+    simplecov (0.13.0)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
+    simplecov-html (0.10.2)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-    skylight (1.3.1)
+    skylight (1.4.4)
       activesupport (>= 3.0.0)
     slop (3.6.0)
     socksify (1.7.1)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.0)
+    sprockets-rails (3.2.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     table_print (1.5.6)
     temple (0.8.0)
-    thor (0.19.4)
+    thor (0.20.0)
     thor-rails (0.0.1)
       rails
       thor
@@ -707,15 +721,15 @@ GEM
     timecop (0.9.1)
     treehash (0.0.2)
     ttfunk (1.5.1)
-    tzinfo (1.2.3)
+    tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
-    unicode-display_width (1.2.1)
-    valuable (0.9.13)
+    unf_ext (0.0.7.4)
+    unicode-display_width (1.3.0)
+    valuable (0.9.14)
     vegas (0.1.11)
       rack (>= 1.0.0)
     warden (1.2.7)
@@ -724,17 +738,13 @@ GEM
       httpi (~> 2.0)
       nokogiri (>= 1.4.2)
     webrobots (0.1.2)
-    websocket-driver (0.6.5)
+    websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
-    wice_grid (3.6.2)
-      activerecord (> 3.2)
-      coffee-rails (> 3.2)
-      kaminari (~> 0.16)
+    websocket-extensions (0.1.3)
     wirble (0.1.3)
     xpath (2.1.0)
       nokogiri (~> 1.3)
-    zendesk_api (1.14.4)
+    zendesk_api (1.16.0)
       faraday (~> 0.9)
       hashie (>= 3.5.2, < 4.0.0)
       inflection
@@ -746,16 +756,16 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
-  active_model_serializers (~> 0.8.0)
+  active_model_serializers
   active_shipping
-  activeadmin!
+  activeadmin
   activeadmin-sortable
   acts_as_list
   addressable
   awesome_print
   aws-sdk
   barby
-  cancancan!
+  cancancan
   capybara-console
   capybara-webkit
   codeclimate-test-reporter
@@ -772,7 +782,7 @@ DEPENDENCIES
   devise
   devportal!
   differ
-  dnsimple-ruby
+  dnsimple-ruby (= 1.7.1)
   doorkeeper
   dotenv-rails
   draper
@@ -795,7 +805,7 @@ DEPENDENCIES
   i18n-active_record
   jquery-rails
   jquery-ui-rails
-  liquid
+  liquid (= 3.0.6)
   mechanize
   meta-tags-helpers
   newrelic_rpm
@@ -808,10 +818,8 @@ DEPENDENCIES
   prawn-templates
   pry
   pry-nav
-  public_suffix
   puma
   puma_worker_killer
-  quiet_assets
   rack-cache
   rack-cors
   rack-iframe
@@ -858,12 +866,11 @@ DEPENDENCIES
   timecop
   treehash
   uglifier
-  wice_grid
   wirble
   zendesk_api
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.4.2p198
 
 BUNDLED WITH
-   1.15.1
+   1.16.0
